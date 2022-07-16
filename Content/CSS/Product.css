@@ -1,0 +1,16 @@
+﻿table {
+    border:dotted;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    color: black;
+}
+
+.Warning{
+    color:red;
+}

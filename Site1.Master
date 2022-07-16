@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ExerciseWebSitePageLikeAmazon.Site1" %>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+           <div class="header">
+
+        </div>
+        <div class="sidebar">
+            <asp:LinkButton Text="Add New Product" PostBackUrl="~/AddProduct.aspx" runat="server" />
+            <asp:TreeView ID="TreeView1" runat="server">
+                <Nodes>
+                    <asp:TreeNode Text="Home" Value="Home" NavigateUrl="~/HomePage.aspx">
+                        <asp:TreeNode NavigateUrl="~/Phone.aspx" Text="Phone" Value="Phone"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/Watch.aspx" Text="Watch" Value="Watch"></asp:TreeNode>
+                    </asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+        </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
+
+
